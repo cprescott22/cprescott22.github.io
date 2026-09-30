@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+
+<!-- Bootstrap CSS (grid system) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d14;
+    color: #eaeaea;
+    padding-bottom: 60px;
+  }
+
+  header {
+    background-color: #000000;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  header a {
+    color: #9db4ff;
+    text-decoration: none;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }
+
+  .project-card {
+    background-color: #1a1a2e;
+    border: 1px solid #2c2c44;
+    border-radius: 8px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .project-card h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+  .project-card p {
+    color: #cfcfcf;
+  }
+
+  .project-card .badge-custom {
+    display: inline-block;
+    font-size: 0.75rem;
+    background-color: #2c2c44;
+    color: #cdd6ff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
+
+  section.projects-section {
+    margin-bottom: 50px;
+  }
+
+  section.projects-section h2 {
+    margin-bottom: 25px;
+    border-bottom: 3px solid #9db4ff;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #ffffff;
+  }
+
+  .group-project-box {
+    background-color: #1a1a2e;
+    border: 1px solid #2c2c44;
+    border-left: 6px solid #9db4ff;
+    border-radius: 6px;
+    padding: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .group-project-box p {
+    color: #cfcfcf;
+  }
+
+  /* Custom media query: adjust layout/typography on small screens */
+  @media (max-width: 576px) {
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    .project-card, .group-project-box {
+      padding: 18px;
+    }
+
+    section.projects-section h2 {
+      font-size: 1.4rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Computer Science Projects</h1>
+  <p><a href="index.html">&larr; Back to home</a></p>
+</header>
+
+<div class="container">
+
+  <section class="projects-section">
+    <h2>Past Projects</h2>
+    <div class="row g-4">
+
+      <div class="col-12 col-md-6">
+        <div class="project-card">
+          <h3>Room Reservation Server</h3>
+          <p>
+            In Senior Design & Development, I worked on a project whose goal was to create a
+            software that would book, manage, and cancel reservations for meeting rooms, using
+            a Vosk speech-to-text AI model and a Gemini agent to perform the necessary tasks.
+          </p>
+          <p><strong>Tools/Languages:</strong> Python, Vosk, Gemini</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="project-card">
+          <h3>Pytest Open Issues</h3>
+          <p>
+            Also in Senior Design & Development, I worked with a group of my classmates to fix
+            open issues from Pytest's public github repository. My parts of the project were
+            fixing get_closest_marker's behavior and fixing an AttributeError during tear down
+            after using the monkeypatch feature.
+          </p>
+          <p><strong>Tools/Languages:</strong> Python, Pytest</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <h2>COMP-335 Final Group Project</h2>
+    <div class="group-project-box">
+      <p>
+        I have not yet discussed ideas for the group project with any other classmates, but I
+        have my own idea to make a website that compiles matchup notes and combo flowcharts for
+        a fighting game. I know of one classmate who may be open to an idea like this.
+      </p>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
